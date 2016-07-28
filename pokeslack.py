@@ -59,7 +59,7 @@ class Pokeslack:
         payload = {
             'username': 'Poké Alert!',
             'text': message,
-            'icon_emoji': ':ghost:'
+            'icon_url': 'http://pre02.deviantart.net/64ea/th/pre/f/2014/103/4/8/master_ball__01__by_adfpf1-d7ea28n.png'
         }
         s = json.dumps(payload)
         r = requests.post(self.slack_webhook_url, data=s)
